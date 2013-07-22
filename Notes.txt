@@ -1,0 +1,23 @@
+
+Features for future versions:
+
+Brightness adjust (+/- 8 (better) or 16 to RGB values).
+Contrast adjust (+/- one 32nd multiplier on current color values).
+Zoom in/out on display.
+Image->Blur()
+Image->RotateHue()
+
+Added in 1.21:
+--------------
+Set filename (short name) in title bar when file is opened.
+Set icon to thumbnail of image when file is opened.
+Fixed a bug with save as that used the wrong index for file type.  This was caused by the switch to wx 2.9 with more file types.  Save as
+  in 1.20 was fucked.  PNG files saved as ICO format but with .png extension.
+
+Added in 1.2:
+-------------
+PNM loading and saving
+IFF loading
+GIF saving
+TGA saving
+Rearranged keyboard shortcuts to be more consistent with other Windows applications.
