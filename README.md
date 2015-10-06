@@ -1,12 +1,14 @@
 PixelSwapper
 ============
 
-PixelSwapper is a basic image manipulation program.  It is written in C++ and uses
-wxWidgets for the user interface.
+PixelSwapper is a basic image manipulation program that was originally released on 
+http://zetacentauri.com
 
-An installable version for Windows is available at:
+It is written in C++ and uses wxWidgets for the user interface.
 
-http://zetacentauri.com/software_pixelswapper.htm
+![PixelSwapper Screenshot](https://github.com/Xangis/PixelSwapper/blob/master/images/PixelSwapper1.png)
+
+A Windows installer is available in the installer folder.
 
 Building requires that wxWidgets 2.9+ be installed.  There is a Makefile for use on Linux
 and a Makefile.mac for use on OSX. If your wx-config is in a different location than that in
