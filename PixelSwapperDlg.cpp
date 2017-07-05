@@ -317,12 +317,12 @@ void PixelSwapperDlg::OnBtnAboutClick( wxCommandEvent& event )
 	// Show about box.
     wxAboutDialogInfo info;
     info.SetName(_("PixelSwapper"));
-    info.SetVersion(_("1.21"));
-    info.SetCopyright(_("(c) 2006-2012 Zeta Centauri, Inc."));
+    info.SetVersion(_("1.22"));
+    info.SetCopyright(_("(c) 2006-2017 Jason Champion"));
 	info.AddDeveloper(_("Jason Champion"));
 	info.SetIcon(_icon);
-	info.SetLicense(_("PixelSwapper is free software and may be distributed freely."));
-	info.SetWebSite(_("http://zetacentauri.com"));
+	info.SetLicense(_("PixelSwapper is free software and may be distributed freely under the terms of the MIT license."));
+	info.SetWebSite(_("https://github.com/Xangis/PixelSwapper"));
 	info.SetDescription(_("PixelSwapper uses the wxWidgets libraries."));
 
     wxAboutBox(info);
