@@ -65,20 +65,21 @@ motivation.
 
 ## Windows
 
-This should also build on Windows, after all, it was originally a Windows app, 
-but you'll have to create your own Visual Studio project that uses all of the 
-.h and .cpp files. That should be easy.  Setting paths and libraries in Visual 
-Studio is the most annoying part of creating a project, and wxWidgets is a 
-particular nuisance in that respect.
+## Windows
 
 To get wxWidgets for Windows, download it here:
 
 http://wxwidgets.org/downloads/
 
-Installer scripts for Windows are under the "installer" folder.  There is one 
-for the Nullsoft Install System (NSIS) and one for InnoSetup.  They may or may 
-not be up to date, but chances are good that you'll have to fiddle with some 
-paths (your VS project will probably put files into different places).
+There is a Visual Studio project included as PixelSwapper.sln. However, you'll need to
+edit the "Additional Library Directories" and "Additional Include Directories"
+paths in the project settings to point to where wxWidgets is on your system.
+
+If it complains about not finding "wx/wx.h", then you need to set the include
+path.
+
+If it complains about a bunch of "unresolved external symbols" starting with wx,
+then you need to set the library path.
 
 # Changelog
 
