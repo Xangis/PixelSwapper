@@ -83,6 +83,11 @@ then you need to set the library path.
 
 # Changelog
 
+### Changes in version 1.22:
+
+- First open-source version.
+- Updated wxWidgets libraries from 2.9 to 3.0.
+
 ### Changes in version 1.21:
 
 - Fixed a bug with file type selection in the "Save As" dialog.
