@@ -203,8 +203,7 @@ void PixelSwapperDlg::CreateControls()
         wxString filename = wxStandardPaths::Get().GetResourcesDir() + _("//pixelswapper.htb");
 #else
 #ifdef WIN32
-	wxStandardPaths paths;
-	wxString filename = paths.GetDataDir() + _("\\pixelswapper.htb");
+	wxString filename = wxStandardPaths::Get().GetDataDir() + _("\\pixelswapper.htb");
 #else
         wxString filename = _("./pixelswapper.htb");
 #endif
