@@ -12,7 +12,7 @@ It is written in C++ and uses wxWidgets for the user interface.
 
 A pre-built Windows installer is available in the installer folder:
 
-https://github.com/Xangis/PixelSwapper/blob/master/installer/PixelSwapper1.21Setup.exe
+https://github.com/Xangis/PixelSwapper/blob/master/installer/PixelSwapper1.22Setup.exe
 
 This software is released under the terms of the MIT License. See License.txt for
 details.
@@ -37,7 +37,7 @@ details.
 
 Building requires that wxWidgets 2.9+ be installed (3.0 preferred).  
 
-## Linux
+### Linux
 
 There is a Makefile for use on Linux and building should be as simple as running "make".
 
@@ -49,7 +49,7 @@ system, run:
 
 sudo apt-get install libwxgtk3.0-dev
 
-## OSX
+### OSX
 
 PixelSwapper has been built on OSX, but has not been tested extensively.
 
@@ -63,9 +63,7 @@ Creating an application bundle requires some additional work and not everything
 necessary is included. I expect to improve the process as I have time and
 motivation.
 
-## Windows
-
-## Windows
+### Windows
 
 To get wxWidgets for Windows, download it here:
 
@@ -81,12 +79,23 @@ path.
 If it complains about a bunch of "unresolved external symbols" starting with wx,
 then you need to set the library path.
 
+#### Windows Installer
+
+There is an InnoSetup installer script in the installer directory. You'll need to
+edit it to match the paths where your project is located since they are all absolute
+paths.
+
+You can get InnoSetup here:
+
+http://www.jrsoftware.org/isinfo.php
+
 # Changelog
 
 ### Changes in version 1.22:
 
 - First open-source version.
 - Updated wxWidgets libraries from 2.9 to 3.0.
+- Visual C++ redistributable included in installer in case users don't already have it.
 
 ### Changes in version 1.21:
 

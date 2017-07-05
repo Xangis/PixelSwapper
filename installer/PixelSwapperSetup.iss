@@ -7,19 +7,19 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{E57963C0-0B06-46F5-95D4-9323F1F583C8}
 AppName=PixelSwapper
-AppVerName=PixelSwapper 1.2
-AppPublisher=Zeta Centauri, Inc.
-AppPublisherURL=http://zetacentauri.com
-AppSupportURL=http://zetacentauri.com
-AppUpdatesURL=http://zetacentauri.com
-DefaultDirName={pf}\Zeta Centauri\PixelSwapper
-DefaultGroupName=Zeta Centauri\PixelSwapper
-LicenseFile=E:\src\PixelSwapper\Release\License.txt
-OutputDir=E:\src\PixelSwapper\Release
-OutputBaseFilename=PixelSwapper1.2Setup
+AppVerName=PixelSwapper 1.22
+AppPublisher=Jason Champion
+AppPublisherURL=https://github.com/Xangis/PixelSwapper
+AppSupportURL=https://github.com/Xangis/PixelSwapper
+AppUpdatesURL=https://github.com/Xangis/PixelSwapper
+DefaultDirName={pf}\PixelSwapper
+DefaultGroupName=PixelSwapper
+LicenseFile=C:\Users\Xangis\code\PixelSwapper\License.txt
+OutputDir=C:\Users\Xangis\code\PixelSwapper\installer
+OutputBaseFilename=PixelSwapper1.22Setup
 Compression=lzma
 SolidCompression=yes
-SetupIconFile=E:\src\PixelSwapper\pixelswap.ico
+SetupIconFile=C:\Users\Xangis\code\PixelSwapper\pixelswap.ico
 UninstallDisplayIcon={app}\pixelswap.ico
 
 [Languages]
@@ -30,16 +30,16 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "E:\src\PixelSwapper\Release\PixelSwapper.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\src\PixelSwapper\Release\pixelswapper.htb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "E:\src\PixelSwapper\Release\pixelswap.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Xangis\code\PixelSwapper\Release\PixelSwapper.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Xangis\code\PixelSwapper\pixelswapper.htb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Xangis\code\PixelSwapper\pixelswap.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Xangis\code\PixelSwapper\License.txt"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+Source: "C:\Users\Xangis\code\Trigram\installer\vcredist2010_x86.exe"; DestDir: "{app}"; Flags: ignoreversion deleteafterinstall
 
 [Icons]
 Name: "{group}\PixelSwapper"; Filename: "{app}\PixelSwapper.exe"; WorkingDir: "{app}"
-Name: "{group}\{cm:ProgramOnTheWeb,PixelSwapper}"; Filename: "http://zetacentauri.com/software_pixelswapper.htm"
 Name: "{commondesktop}\PixelSwapper"; Filename: "{app}\PixelSwapper.exe"; Tasks: desktopicon; WorkingDir: "{app}"
-Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\PixelSwapper"; Filename: "{app}\PixelSwapper.exe"; Tasks: quicklaunchicon; WorkingDir: "{app}"
 
 [Registry]
 Root: HKCR; Subkey: ".bmp"; ValueType: string; ValueName: ""; ValueData: "PixelSwapperBmpFile"; Flags: uninsdeletevalue
@@ -74,5 +74,6 @@ Root: HKCR; Subkey: "PixelSwapperTifFile\shell\open\command"; ValueType: string;
 Root: HKCR; Subkey: "PixelSwapperXpmFile\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\Pixelswapper.exe"" ""%1"""
 
 [Run]
+Filename: "{app}\vcredist2010_x86.exe"; Parameters: "/q"; WorkingDir: "{app}";  StatusMsg: "Installing Visual C++ 2010 Redistributable..."; Flags: waituntilterminated
 Filename: "{app}\PixelSwapper.exe"; Description: "{cm:LaunchProgram,PixelSwapper}"; Flags: nowait postinstall skipifsilent
 
