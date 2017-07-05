@@ -126,8 +126,8 @@ http://www.jrsoftware.org/isinfo.php
 
 I consider this application to be feature complete and am not actively developing new 
 features for it. However, it does need some improvements to make it work and/or build 
-better on some platforms (OSX and Windows, for example). This is something I may work 
-on as I have time.
+better on some platforms (OSX, for example). This is something I may work on as I 
+have time.
 
 I do still maintain this application and will accept pull requests if you have improvements 
 to contribute.
