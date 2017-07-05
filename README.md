@@ -8,7 +8,7 @@ open-sourced.
 
 It is written in C++ and uses wxWidgets for the user interface.
 
-![PixelSwapper Screenshot](https://github.com/Xangis/PixelSwapper/blob/master/images/PixelSwapper1.png)
+![PixelSwapper Screenshot](https://github.com/Xangis/PixelSwapper/blob/master/images/PixelSwapper1.22.png)
 
 A pre-built Windows installer is available in the installer folder:
 
