@@ -51,7 +51,7 @@ void AboutDlg::CreateControls()
     wxBoxSizer* itemBoxSizer3 = new wxBoxSizer(wxHORIZONTAL);
     itemBoxSizer2->Add(itemBoxSizer3, 0, 0, 7);
 
-	wxStaticText* itemStaticText4 = new wxStaticText( itemDialog1, wxID_STATIC, _("PixelSwapper Version 1\n(c) 2006 Zeta Centauri, Inc.\nDeveloped by Jason Champion\nhttp://www.zetacentauri.com"), wxDefaultPosition, wxDefaultSize, 0 );
+	wxStaticText* itemStaticText4 = new wxStaticText( itemDialog1, wxID_STATIC, _("PixelSwapper Version 1.22\n(c) 2006-2020 Lambda Centauri, Inc.\nDeveloped by Jason Champion\nhttps://lambdacentauri.com"), wxDefaultPosition, wxDefaultSize, 0 );
     itemBoxSizer3->Add(itemStaticText4, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 10);
 }
 
