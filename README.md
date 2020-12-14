@@ -91,6 +91,19 @@ http://www.jrsoftware.org/isinfo.php
 
 # Changelog
 
+### TODO for future versions:
+
+Brightness adjust (+/- 8 (better) or 16 to RGB values).
+Contrast adjust (+/- one 32nd multiplier on current color values).
+Zoom in/out on display.
+Image->Blur()
+Image->RotateHue()
+
+### Changes in version 1.23:
+
+- Updated to wxWidgets libraries from 3.0.2 to 3.1.4.
+[Needs fix for icon -- is thumbnail of opnened image, but we need to show ORIGINAL icon in the about box]
+
 ### Changes in version 1.22:
 
 - First open-source version.

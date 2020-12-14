@@ -19,3 +19,6 @@
 *.user
 *.filters
 ipch/
+.vs/
+Debug/
+Release/

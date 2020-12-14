@@ -317,8 +317,8 @@ void PixelSwapperDlg::OnBtnAboutClick( wxCommandEvent& event )
 	// Show about box.
     wxAboutDialogInfo info;
     info.SetName(_("PixelSwapper"));
-    info.SetVersion(_("1.22"));
-    info.SetCopyright(_("(c) 2006-2017 Jason Champion"));
+    info.SetVersion(_("1.23"));
+    info.SetCopyright(_("(c) 2006-2020 Jason Champion"));
 	info.AddDeveloper(_("Jason Champion"));
 	info.SetIcon(_icon);
 	info.SetLicense(_("PixelSwapper is free software and may be distributed freely under the terms of the MIT license."));
@@ -434,7 +434,7 @@ void PixelSwapperDlg::OnBtnSaveAsClick( wxCommandEvent& event )
 	fileName = fdialog.GetPath();
 	_statusBar->SetStatusText( fileName, 0 );
 
-	int fileType;
+	wxBitmapType fileType;
 
 	switch( fdialog.GetFilterIndex() )
 	{
