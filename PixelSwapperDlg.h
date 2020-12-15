@@ -146,6 +146,7 @@ private:
 	wxHtmlHelpController* _helpCtrl;
 	double _scaleFactor;
 	wxIcon _icon;
+	wxIcon _originalIcon;
 };
 
 

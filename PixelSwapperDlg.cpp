@@ -97,8 +97,9 @@ bool PixelSwapperDlg::Create( wxWindow* parent, wxWindowID id, const wxString& c
 	if( _icon.LoadFile(_T("pixelswap.ico"), wxBITMAP_TYPE_ICO ))
 	{
 		SetIcon(_icon);
-                wxTopLevelWindow::SetIcon(_icon);
+        wxTopLevelWindow::SetIcon(_icon);
 	}
+	_originalIcon = _icon;
 	_dropTarget = new PixelSwapperDropTarget(this);
 	wxWindow::SetDropTarget( _dropTarget );
     GetSizer()->Fit(this);
@@ -320,9 +321,9 @@ void PixelSwapperDlg::OnBtnAboutClick( wxCommandEvent& event )
     info.SetVersion(_("1.23"));
     info.SetCopyright(_("(c) 2006-2020 Jason Champion"));
 	info.AddDeveloper(_("Jason Champion"));
-	info.SetIcon(_icon);
+	info.SetIcon(_originalIcon);
 	info.SetLicense(_("PixelSwapper is free software and may be distributed freely under the terms of the MIT license."));
-	info.SetWebSite(_("https://github.com/Xangis/PixelSwapper"));
+	info.SetWebSite(_("https://lambdacentauri.com/software_pixelswapper.htm"));
 	info.SetDescription(_("PixelSwapper uses the wxWidgets libraries."));
 
     wxAboutBox(info);

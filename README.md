@@ -8,12 +8,6 @@ open-sourced.
 
 It is written in C++ and uses wxWidgets for the user interface.
 
-![PixelSwapper Screenshot](https://github.com/Xangis/PixelSwapper/blob/master/images/PixelSwapper1.22.png)
-
-A pre-built Windows installer is available in the installer folder:
-
-https://github.com/Xangis/PixelSwapper/blob/master/installer/PixelSwapper1.22Setup.exe
-
 This software is released under the terms of the MIT License. See License.txt for
 details.
 
